@@ -1,0 +1,99 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* 3-column layout using Flexbox */
+.team-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+/* Profile Card */
+.card{
+    background:white;
+    width:300px;
+    text-align:center;
+    padding:25px;
+    margin:10px;
+    border:2px solid #d1d5db;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.card h2{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.card h3{
+    color:#2563eb;
+    margin:10px 0;
+    font-size:1rem;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* Highlight Team Lead */
+.lead{
+    background:#fff7d6;
+    border:3px dashed #f59e0b;
+    box-shadow:0 6px 15px rgba(245,158,11,0.35);
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* Responsive: Single column below 600px */
+@media (max-width:600px){
+    .team-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
