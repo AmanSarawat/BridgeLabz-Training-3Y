@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Dashboard Grid */
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 80px 1fr;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+
+    gap: 20px;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sidebar */
+aside {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    padding: 25px;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Boxes */
+.box {
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* First box spans two columns */
+.box1 {
+    grid-column: span 2;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .box1 {
+        grid-column: span 1;
+    }
+}
