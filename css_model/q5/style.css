@@ -1,0 +1,45 @@
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+li:hover {
+    background: yellow;
+}
+
+input:focus {
+    outline: 3px solid orange;
+}
+
+li:nth-child(odd) {
+    color: red;
+}
+
+.items p {
+    font-size: 18px;
+}
+
+.items > h2 {
+    color: blue;
+}
+
+h2 + ul {
+    border: 2px solid black;
+}
+
+h2 ~ input {
+    background: lightyellow;
+}
+
+h1::before {
+    content: "★ ";
+}
+
+h1::after {
+    content: " ★";
+}

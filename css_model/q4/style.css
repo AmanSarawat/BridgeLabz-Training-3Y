@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px gray;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px;
+}
+
+.card {
+    width: 250px;
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    transition: all 0.4s ease;
+}
+
+.card1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.card2 {
+    box-shadow: 0 0 20px gray;
+}
+
+.card3 {
+    box-shadow: 10px 10px 0 gray;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px gray;
+}

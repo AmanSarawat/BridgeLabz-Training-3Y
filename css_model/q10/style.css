@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border: 1px solid gray;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: orange;
+    color: black;
+}
+
+nav a.active {
+    background: blue;
+    border-bottom: 4px solid white;
+}
+
+main {
+    min-height: 70vh;
+    padding: 50px;
+}
+
+footer {
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+}

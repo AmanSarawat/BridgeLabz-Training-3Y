@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    z-index: 10;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.linear {
+    background: linear-gradient(90deg, blue, purple, pink);
+    background-attachment: fixed;
+}
+
+.radial {
+    background: radial-gradient(circle, orange, red, darkred);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
