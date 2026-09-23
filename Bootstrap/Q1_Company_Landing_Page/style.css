@@ -1,0 +1,35 @@
+/* Hero Section Styling */
+.hero{
+    min-height:90vh;
+    background:linear-gradient(135deg,#0d6efd,#6ea8fe);
+    color:white;
+}
+
+/* Button Hover */
+.btn-primary:hover{
+    background:#084298;
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+/* Card Hover Effect */
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Responsive Text */
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero{
+        text-align:center;
+        padding:60px 0;
+    }
+}

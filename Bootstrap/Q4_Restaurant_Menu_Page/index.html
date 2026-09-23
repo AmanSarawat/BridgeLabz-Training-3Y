@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Menu</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <header class="bg-danger text-white text-center py-4">
+    <div class="container">
+      <h1 class="fw-bold">Royal Spice Restaurant</h1>
+      <p class="lead mb-0">Fresh • Delicious • Homemade</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Title -->
+    <section class="text-center mb-4">
+      <h2 class="fw-bold">Today's Menu</h2>
+      <p class="lead">Enjoy our chef's freshly prepared dishes.</p>
+    </section>
+
+    <!-- Food Image -->
+    <section class="text-center mb-5">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900"
+           class="img-fluid rounded shadow"
+           alt="Delicious Food">
+
+      <p class="mt-2 text-muted">
+        Signature Indian Thali served with fresh ingredients.
+      </p>
+    </section>
+
+    <!-- Menu Table -->
+    <section class="mb-5">
+      <h3 class="fw-bold mb-3">Menu List</h3>
+
+      <table class="table table-bordered table-hover text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Dish</th>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Paneer Butter Masala</td>
+            <td>Main Course</td>
+            <td>₹280</td>
+          </tr>
+          <tr>
+            <td>Veg Biryani</td>
+            <td>Rice</td>
+            <td>₹220</td>
+          </tr>
+          <tr>
+            <td>Masala Dosa</td>
+            <td>South Indian</td>
+            <td>₹140</td>
+          </tr>
+          <tr>
+            <td>Butter Naan</td>
+            <td>Bread</td>
+            <td>₹40</td>
+          </tr>
+          <tr>
+            <td>Gulab Jamun</td>
+            <td>Dessert</td>
+            <td>₹90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Chef's Specials -->
+    <section class="mb-5">
+      <h3 class="fw-bold mb-3">Chef's Specials</h3>
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Royal Thali
+          <span class="badge bg-danger">Best Seller</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          Tandoori Platter
+          <span class="badge bg-warning text-dark">Hot</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          Mango Lassi
+          <span class="badge bg-success">Fresh</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          Chocolate Brownie
+          <span class="badge bg-primary">New</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2026 Royal Spice Restaurant
+  </footer>
+
+</body>
+</html>

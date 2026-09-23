@@ -1,0 +1,20 @@
+/* Food Image */
+img{
+    max-height:420px;
+    object-fit:cover;
+}
+
+/* Table Styling */
+.table{
+    background:white;
+}
+
+/* List Group Hover */
+.list-group-item{
+    transition:0.3s;
+}
+
+.list-group-item:hover{
+    background:#ffe5e5;
+    transform:translateX(5px);
+}

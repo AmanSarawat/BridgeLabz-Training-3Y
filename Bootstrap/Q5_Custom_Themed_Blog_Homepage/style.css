@@ -1,0 +1,60 @@
+/* ===== Custom Bootstrap Theme ===== */
+:root{
+    --bs-primary:#6f42c1;          /* Theme Color */
+    --bs-font-sans-serif:'Poppins', sans-serif;
+}
+
+/* Global Font */
+body{
+    font-family:var(--bs-font-sans-serif);
+    background:#f8f9fa;
+}
+
+/* Header */
+.hero{
+    background:linear-gradient(135deg,#6f42c1,#9b6dff);
+}
+
+/* Footer */
+footer{
+    background:#6f42c1;
+}
+
+/* Card Theme */
+.blog-card{
+    border:none;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 1rem 2rem rgba(0,0,0,.15)!important;
+}
+
+/* Images */
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+/* Theme Button */
+.btn-primary{
+    background:var(--bs-primary);
+    border-color:var(--bs-primary);
+}
+
+.btn-primary:hover{
+    background:#5a32a3;
+    border-color:#5a32a3;
+}
+
+/* Heading Color */
+h1,h2,h3{
+    color:var(--bs-primary);
+}
+
+.hero h1,
+.hero p{
+    color:white;
+}
