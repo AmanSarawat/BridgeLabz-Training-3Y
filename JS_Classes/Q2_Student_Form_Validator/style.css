@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    width: 350px;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+span {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
