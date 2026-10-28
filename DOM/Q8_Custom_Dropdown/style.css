@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+#dropdown {
+    position: relative;
+    width: 220px;
+}
+
+#dropdownBtn {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+#options {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.option {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: lightblue;
+}

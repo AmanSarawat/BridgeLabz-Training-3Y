@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Step Form</title>
+</head>
+<body>
+    <h2>Multi-Step Form</h2>
+
+    <form id="myForm">
+        <div class="step">
+            <h3>Step 1: Name</h3>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="step" hidden>
+            <h3>Step 2: Email</h3>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="step" hidden>
+            <h3>Step 3: Password</h3>
+            <input type="password" id="password" placeholder="Enter password" minlength="6" required>
+        </div>
+
+        <p id="error" style="color: red;"></p>
+
+        <button type="button" id="backBtn" hidden>Back</button>
+        <button type="button" id="nextBtn">Next</button>
+    </form>
+
+    <div id="summary" hidden>
+        <h3>Form Summary</h3>
+        <p id="summaryName"></p>
+        <p id="summaryEmail"></p>
+        <p id="summaryPassword"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
